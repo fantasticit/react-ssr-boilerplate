@@ -17,7 +17,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../'
+              publicPath: '../' // 如果遇到 css 中诸如引用图片路径错误问题，请修改此处
             }
           },
           'css-loader?importLoaders=1',
@@ -86,7 +86,8 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json', '.scss'],
     alias: {
-      '@': path.resolve(__dirname, '../src')
+      '@': path.resolve(__dirname, '../src'),
+      assets: path.resolve(__dirname, '../src/assets')
     }
   }
 }

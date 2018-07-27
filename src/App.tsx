@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Logo from './assets/logo.png'
 import './app.scss'
 
 export interface AppProps {
@@ -7,6 +8,16 @@ export interface AppProps {
 
 export default class App extends React.Component {
   render() {
-    return <h1>Hello World2</h1>
+    return (
+      <div className="app">
+        <header>
+          <img src={Logo} alt="logo" />
+          <p>Welcome to React</p>
+        </header>
+        <p>
+          To get started, edit <code>src/App.tsx</code> and save to reload.
+        </p>
+      </div>
+    )
   }
 }
