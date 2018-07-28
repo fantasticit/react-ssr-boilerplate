@@ -5,7 +5,7 @@ import App from '../src/App'
 
 configure({ adapter: new Adapter() })
 
-test('Welcome to Electron', () => {
+test('Welcome to React', () => {
   const wrapper = mount(<App />)
   const p = wrapper.find('header p')
   expect(p.text()).toBe('Welcome to React')
