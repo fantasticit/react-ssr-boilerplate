@@ -2,10 +2,6 @@ import * as React from 'react'
 import Logo from './assets/logo.png'
 import './app.scss'
 
-export interface AppProps {
-  store: object
-}
-
 export default class App extends React.Component {
   render() {
     return (
