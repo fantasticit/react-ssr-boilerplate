@@ -39,6 +39,16 @@ It will open `http://localhost:8080` default.To use another port, you can just e
 },
 ```
 
+## Test
+
+The project uses `Jest` to test:
+
+```bash
+npm test
+```
+
+If you want to change the test config, edit the `jest.config.js`.
+
 ## Packaging
 
 To package the app:

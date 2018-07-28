@@ -9,6 +9,9 @@
       }
     ]
   ],
-  "plugins": ["transform-runtime", "transform-decorators-legacy", "react-hot-loader/babel"],
-  "comments": false
+  "plugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    "react-hot-loader/babel"
+  ]
 }
