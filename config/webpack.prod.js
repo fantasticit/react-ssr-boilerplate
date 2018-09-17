@@ -22,6 +22,9 @@ module.exports = merge(baseConfig, {
         sourceMap: true
       })
     ],
+    runtimeChunk: {
+      name: 'manifest'
+    },
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -37,7 +40,7 @@ module.exports = merge(baseConfig, {
           name: 'vendor',
           priority: 10,
           enforce: true
-        }
+        },
       }
     }
   },
