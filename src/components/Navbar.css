@@ -1,0 +1,14 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 1rem;
+  display: inline-flex;
+}
+
+li > a {
+  text-decoration: none;
+  color: inherit;
+}

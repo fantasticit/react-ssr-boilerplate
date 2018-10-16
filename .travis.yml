@@ -3,9 +3,8 @@ node_js:
   - 10.6.0
 
 script:
-  - npm run test
+  - npm run dev
 
 branches:
   only:
     - master
-    
