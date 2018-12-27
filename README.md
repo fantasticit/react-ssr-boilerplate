@@ -2,7 +2,7 @@
 
 > A boilerplate for developing Server Side Render React.js Application
 
-##  使用
+## 使用
 
 本地开发：`npm run dev`
 
