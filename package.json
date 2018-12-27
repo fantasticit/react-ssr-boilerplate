@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "rimraf dist && babel-node server.js --presets react,env ",
+    "dev": "rimraf dist && babel-node server.js",
     "start": "cross-env NODE_ENV=production node dist/server.prod.js",
     "build": "rimraf dist && npm run build:client && npm run build:server",
     "build:server": "babel server.js -o dist/server.prod.js",
@@ -12,7 +12,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-import": "^1.9.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

@@ -3,6 +3,7 @@
   "plugins": [
     "transform-runtime",
     "syntax-dynamic-import",
+    "dynamic-import-node",
     "react-loadable/babel",
     "transform-object-rest-spread",
     [

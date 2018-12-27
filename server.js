@@ -34,7 +34,8 @@ if (!isProd) {
   app.use(
     webpackDevMiddleware(compiler, {
       noInfo: true,
-      publicPath: config.output.publicPath
+      publicPath: config.output.publicPath,
+      serverSideRender: true
     })
   )
   app.use(webpackHotMiddleware(compiler, { heartbeat: 5000, log: console.log }))
